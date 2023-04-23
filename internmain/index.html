@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <div class="main">
+        <section id="home">
+            <div class="welcome__screen">
+                <video autoplay muted loop id="bg__vid">
+                    <source src="bg.mp4" type="video/mp4">
+                </video>
+                <div class="navbar">
+                    <div class="navbar__icons">
+                        <p class="logo">Remine</p>
+                        <div class="navbar__icons__main">
+                            <a href="/">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#vision">Our Services</a>
+                            <a href="#contact">Contact Us</a>
+                        </div>
+                    </div>
+                    <input class="navbar__search" placeholder="Search.."></input>
+                    <img src="menu.png" class="hamburger" onclick="showsidebar()"></img>
+                </div>
+                <div class="sidebar__main" id="s__m">
+                    <div class="sidebar" id="__s">
+                        <img src="close.png" class="cross" onclick="closesidebar()"></img>
+                        <div class="sidebar__icons__main">
+                            <a href="/" onclick="scrolltooption()">Home</a>
+                            <a href="#about" onclick="scrolltooption()">About</a>
+                            <a href="#vision" onclick="scrolltooption()">Our Services</a>
+                            <a href="#contact" onclick="scrolltooption()">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="sub__content">
+                        <p class="content__title">HELP US <span>SAVE</span> THE EARTH</p>
+                        <p class="content__sub">JOIN OUR VISION AND HELP US SAVE OUR PLANET</p>
+                        <a class="content__know__more" href="#vision">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about">
+                <div class="about__main">
+                    <div class="about__text">
+                        <p class="about__header">About Us</p>
+                         <p class="about__text__main__content">
+                            <br>
+                                Namo eWaste Management Ltd. is one of the leading companies of India that recycle electrical and electronic (EEE) waste.
+                            </br>
+                            <br>
+                                Successfully operating since 2022, Remine eWaste Management offers comprehensive, complete, and responsible recycling
+                                services. Our integrated and best in class technology ensures environmental safety and sustainability while recycling
+                                eWaste.
+                            </br>
+                            <br>
+                                With our experience in managing large volumes of high-quality EEE waste, we are able to extract all of the components of
+                                an electrical item including metals like mercury, lead, cadmium, PCBs, etc., without leaving a trace behind. We are ISO
+                                and r2 certified comply with strict environmental regulations regarding handling hazardous products and disposing of
+                                them safely to keep our environment green.
+                            </br>
+                        </p>
+                    </div>
+                    <img src="https://images.pexels.com/photos/3850558/pexels-photo-3850558.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1" alt="" class="about__pic">
+                </div>
+                <div class="about__bg">
+                    <p>WE RECYCLE E-WASTE AND LITHIUM BATTERIES</p>
+                </div>
+            </div>
+        </section>
+        <section id="vision">
+            <div class="vision">
+                <p class="vision__sub__header">OUR <span>SERVICES</span></p>
+                <div class="vision__cards">
+                <figure class="icon-cards mt-3">
+                    <div class="icon-cards__content">
+                        <div class="icon-cards__item d-flex align-items-center justify-content-center" style="display: flex;">
+                            <div class="vision__content__main">
+                                <img src="recycle.png" alt="">
+                                <p class="vision__content__header">
+                                    Recycling Lithium Batteries
+                                </p>
+                                <p class="vision__content__sub">
+                                    We use a combi­nation of mechanical and hydromet­al­lur­gical technologies to recycle the battery materials. Our
+                                    indus­trial-scale, low-CO2 processes allow us to recover lithium, cobalt, manganese and nickel from the battery for
+                                    reuse in the production of new batteries. Our optimised battery treatment processes are safe, sustainable, and
+                                    efficient.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="icon-cards__item d-flex align-items-center justify-content-center" style="display: flex;">
+                            <div class="vision__content__main">
+                                <img src="recycle.png" alt="">
+                                <p class="vision__content__header">
+                                    Electrical & Electronic Recycling
+                                </p>
+                                <p class="vision__content__sub">
+                                    EEE recycling involves collecting, sorting, and recycling electronic products in order to reuse any salvageable
+                                    materials in the electronics. Recycling electronics helps reduce pollution that would be generated while manufacturing a new product and the need to
+                                    extract valuable and limited virgin resources. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="icon-cards__item d-flex align-items-center justify-content-center" style="display: flex;">
+                            <div class="vision__content__main">
+                                <img src="recycle.png" alt="">
+                                <p class="vision__content__header">
+                                    EPR Services
+                                </p>
+                                <p class="vision__content__sub">
+                                Manufacturers, producers & importers are usually held responsible for the handling and disposal of certain eWaste
+                                products after their life has ended under eWaste guidelines 2022.This service enables producers to meet their EPR requirements and also helps them in undertaking the complete procedure
+                                of Logistics Management.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+                
+                <div class="checkbox" style="display: none;">
+                    <input class="d-none" id="toggle-animation" type="checkbox" checked />
+                    <label class="checkbox__checkbox" for="toggle-animation"></label>
+                    <label class="checkbox__label" for="toggle-animation">Toggle animation</label>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact">
+                <p class="contact__header">
+                    Contact Us
+                </p>
+                <div class="contact__inputs">
+                    <div class="contact__name">
+                        <p>Name</p>
+                        <input type="text" placeholder="Your name">
+                    </div>
+                    <div class="contact__email">
+                        <p>Email</p>
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <div class="contact__num">
+                        <p>Contact No.</p>
+                        <input type="text" placeholder="Your Number">
+                    </div>
+                    <div class="contact__query">
+                        <p>Query</p>
+                        <textarea type="text" rows="4" placeholder="Your Query"></textarea>
+                    </div>
+                    <button class="query__send">Send</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
